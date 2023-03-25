@@ -1,0 +1,15 @@
+{{#each employees}}
+<div class="card">
+  <div class="card-body">
+    <a href="/employees/{{this.id}}" class="card-link">
+      <h5 class="card-title" href="/employees/{{this.id}}">{{this.name}}</h5>
+    </a>
+    <h6 class="card-subtitle mb-2 text-muted">Employee id: {{this.id}}</h6>
+    <p class="card-text">{{this.email}}</p>
+    {{!-- <a href="/employees/{{this.id}}" class="card-link">See user detail</a> --}}
+  </div>
+  <div class="card-footer">
+    <span class="badge rounded-pill text-bg-secondary">Contract: {{this.time}}</span>
+  </div>
+</div>
+{{/each}}

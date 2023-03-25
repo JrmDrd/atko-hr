@@ -1,0 +1,29 @@
+<h2>Employees</h2>
+
+<!-- Button trigger modal -->
+<div class="d-grid gap-2">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Onboard new employee
+    </button>
+</div>
+<div class="d-grid gap-2">{{> employeesList}}</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        {{> employeeAdd}}
+    </div>
+  </div>
+</div>
+
+<script>
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>

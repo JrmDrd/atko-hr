@@ -1,0 +1,38 @@
+{{> notification}}
+
+<h2>{{employee.name}}</h2>
+<h4>{{employee.user_metadata.position}}</h4>
+
+
+
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="{{employee.email}}">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPosition" class="col-sm-2 col-form-label">Position</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" value="{{employee.user_metadata.position}}" aria-label="Disabled input example" disabled readonly>
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="inputPosition" class="col-sm-2 col-form-label">Hired date</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" value="{{employee.user_metadata.hireDate}}" aria-label="Disabled input example" disabled readonly>
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="inputPosition" class="col-sm-2 col-form-label">Manager</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" value="{{employee.user_metadata.manager}}" aria-label="Disabled input example" disabled readonly>
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="inputPosition" class="col-sm-2 col-form-label">Contract</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" value="{{employee.user_metadata.time}}" aria-label="Disabled input example" disabled readonly>
+    </div>
+    </div>
+</div>
